@@ -1,11 +1,11 @@
 <h2>Informações do Alojamento</h2>
 
-<div *ngIf="cep">
+<div *ngIf="place">
 
-<h3>{{ cep.cep }}</h3>
-<h4>{{ cep.logradouro }}</h4>
-<b>{{ cep.bairro }}</b>
-<p><b>{{ cep.localidade }}</b></p>
-<p><b>{{ cep.uf }}</b></p>
+<h3>{{ <place class="id"></place> }}</h3>
+<h4>{{ <place class="type"></place> }}</h4>
+<b>{{ <place class="city"></place> }}</b>
+<p><b>{{ <place class="address"></place> }}</b></p>
+<p><b>{{ <place class="host"></place> }}</b></p>
 
 </div>
