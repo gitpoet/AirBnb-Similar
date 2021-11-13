@@ -6,4 +6,3 @@ export interface Place {
     host: string;
   
   }
-}

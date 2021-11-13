@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Cep, ceps } from '../ceps';
+import { Place } from '../place';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +8,11 @@ import { Cep, ceps } from '../ceps';
   styleUrls: ['./home.component.css'],
 })
 export class HomePageComponent implements OnInit {
-  cep: Cep | undefined;
+  place: Place | undefined;
 
  
-    getCep(cep:string) {
-      this.router.navigate(['ceps', cep]);
+    getPlace(place:string) {
+      this.router.navigate(['place', place]);
     }
 
 

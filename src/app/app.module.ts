@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 //import { CepListComponent } from './cep-list/cep-list.component';
 import { HomePageComponent } from './home/home.component';
-import { CepComponent } from './cep/cep.component';
+//import { CepComponent } from './cep/cep.component';
+import {PlaceComponent } from './place/place.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     RouterModule.forRoot([
       { path: '', component: HomePageComponent },
    //   { path: 'list', component: CepListComponent },
-      { path: 'ceps/:numeroCep', component: CepComponent },
+      //{ path: 'ceps/:numeroCep', component: CepComponent },
+      { path: 'place/:numeroPlace', component: PlaceComponent },
     ]),
   ],
   declarations: [
@@ -26,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
     TopBarComponent,
     //CepListComponent,
     HomePageComponent,
-    CepComponent,
+    //CepComponent,
+    PlaceComponent,
   ],
   bootstrap: [AppComponent],
 })
