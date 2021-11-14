@@ -10,6 +10,7 @@ import { HomePageComponent } from './home/home.component';
 //import { CepComponent } from './cep/cep.component';
 import {PlaceComponent } from './place/place.component';
 import { HttpClientModule } from '@angular/common/http';
+import {PlaceService} from './place.service';
 
 @NgModule({
   imports: [
@@ -31,6 +32,7 @@ import { HttpClientModule } from '@angular/common/http';
     //CepComponent,
     PlaceComponent,
   ],
+  providers: [HttpClientModule, PlaceService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

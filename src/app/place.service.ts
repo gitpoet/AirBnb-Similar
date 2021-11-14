@@ -9,7 +9,7 @@ export class PlaceService {
 
   }
   getPlace(place:string){
-    return this.http.get<Place>('localhost:8080/place/'+ place +'/json/');
+    return this.http.get<Place>('localhost:8080/place/'+ place);
 
   }
 }
